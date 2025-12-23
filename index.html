@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>W. D. Dharani Samudrika</title>
 </head>
-<body>
 
-<!-- Navigation -->
-<nav>
-    <h1>Dharani.dev</h1>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+<body class="bg-black text-neutral-300 antialiased">
+
+<nav class="max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
+    <h1 class="text-white font-semibold text-lg">Dharani.dev</h1>
+    <ul class="flex gap-6 text-sm">
+        <li><a href="#about" class="hover:text-white">About</a></li>
+        <li><a href="#projects" class="hover:text-white">Projects</a></li>
+        <li><a href="#skills" class="hover:text-white">Skills</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Hero -->
-<section>
-    <h2>Hi, I'm Dharani</h2>
-    <h3>Software Engineer Intern</h3>
-    <p>
+<main class="max-w-5xl mx-auto px-6 space-y-24">
+
+<section class="space-y-4">
+    <h2 class="text-4xl sm:text-5xl font-semibold text-white">
+        Hi, I'm Dharani
+    </h2>
+    <h3 class="text-xl text-neutral-400">Software Engineer Intern</h3>
+    <p class="max-w-2xl text-neutral-400">
         I build web applications and enjoy working across frontend and backend.
         I like converting real problems into clear systems and clean flows.
     </p>
-    <a href="#contact">Get in Touch</a>
-    <a href="https://github.com/dharanisw" target="_blank">GitHub</a>
+    <div class="flex gap-6 text-sm">
+        <a href="#contact" class="text-white underline underline-offset-4">Get in Touch</a>
+        <a href="https://github.com/dharanisw" target="_blank" class="hover:text-white">GitHub</a>
+    </div>
 </section>
 
-<!-- About -->
-<section id="about">
-    <h2>About Me</h2>
+<section id="about" class="space-y-6">
+    <h2 class="text-2xl font-medium text-white">About Me</h2>
     <p>
         Software engineering undergraduate with experience in full stack development.
         I mainly work with JavaScript, React, Django, and relational databases.
@@ -42,158 +47,80 @@
         I enjoy working on both product logic and technical design.
     </p>
 
-    <h3>Education</h3>
-    <p>
-        <strong>B.Sc. (Hons) Industrial Information Technology</strong><br>
-        Uva Wellassa University (2021 – 2026)<br>
-        GPA: 3.64 / 4.0<br>
-        Dean’s List
-    </p>
+    <div class="border border-neutral-800 rounded-lg p-6">
+        <h3 class="text-white font-medium">Education</h3>
+        <p class="mt-2 text-sm text-neutral-400">
+            <strong>B.Sc. (Hons) Industrial Information Technology</strong><br>
+            Uva Wellassa University (2021 – 2026)<br>
+            GPA: 3.64 / 4.0 · Dean’s List
+        </p>
+    </div>
 </section>
 
-<!-- Projects -->
-<section id="projects">
-    <h2>Projects</h2>
+<section id="projects" class="space-y-10">
+    <h2 class="text-2xl font-medium text-white">Projects</h2>
 
-    <article>
-        <h3>Axoten Wave</h3>
+    <article class="border border-neutral-800 rounded-lg p-6 space-y-2">
+        <h3 class="text-white font-medium">Axoten Wave</h3>
         <p>All-in-one study assistant with interactive quizzes and multiplayer contests.</p>
-        <p><strong>Tech:</strong> Next.js, Flutter, NestJS, PostgreSQL</p>
-        <ul>
-            <li>Real-time contests with anti-cheat logic</li>
-            <li>Personalized learning experience</li>
-            <li>Score tracking and analytics</li>
-        </ul>
+        <p class="text-sm text-neutral-500">Next.js · Flutter · NestJS · PostgreSQL</p>
     </article>
 
-    <article>
-        <h3>AXOTEN WAVE MARKER (Solo Project)</h3>
+    <article class="border border-neutral-800 rounded-lg p-6 space-y-2">
+        <h3 class="text-white font-medium">AXOTEN WAVE MARKER (Solo)</h3>
         <p>
-            An automated essay marking system that evaluates student answers
-            using semantic similarity.
+            Automated essay marking using semantic similarity and embeddings.
         </p>
-        <p>
-            Teachers provide the model answer. The system generates embeddings
-            for the correct answer and compares them with student responses
-            to calculate marks.
-        </p>
-        <p><strong>Tech:</strong> React, Django REST API, MySQL, Gemini API</p>
+        <p class="text-sm text-neutral-500">React · Django · MySQL · Gemini API</p>
     </article>
 
-    <article>
-        <h3>Student Attendance Tracking & Report Generating System (Group Project)</h3>
+    <article class="border border-neutral-800 rounded-lg p-6 space-y-2">
+        <h3 class="text-white font-medium">Student Attendance System</h3>
         <p>
-            Web system to track student attendance and generate reports for
-            academic and administrative use.
+            Attendance tracking and academic report generation system.
         </p>
-        <p><strong>Frontend:</strong> React</p>
-        <p><strong>Backend:</strong> Django (REST API)</p>
-        <p><strong>Database:</strong> MySQL</p>
+        <p class="text-sm text-neutral-500">React · Django · MySQL</p>
     </article>
 
-    <article>
-        <h3>EzMenu</h3>
-        <p>
-            Digital hotel menu system replacing manual ordering.
-        </p>
-        <p><strong>Tech:</strong> React, PHP, MySQL</p>
-        <ul>
-            <li>Real-time order management</li>
-            <li>Instant menu updates</li>
-            <li>Improved kitchen communication</li>
-        </ul>
+    <article class="border border-neutral-800 rounded-lg p-6 space-y-2">
+        <h3 class="text-white font-medium">EzMenu</h3>
+        <p>Digital hotel menu and order management system.</p>
+        <p class="text-sm text-neutral-500">React · PHP · MySQL</p>
     </article>
 </section>
 
-<!-- Research -->
-<section>
-    <h2>Research Work</h2>
+<section id="skills" class="space-y-6">
+    <h2 class="text-2xl font-medium text-white">Skills</h2>
 
-    <article>
-        <h3>Video Watermarking for Educational Streaming</h3>
-        <p>
-            Research on deep neural network-based video watermarking
-            for piracy forensics.
-        </p>
-        <p><strong>Tech:</strong> Python, PyTorch, FFmpeg, CUDA</p>
-    </article>
-
-    <article>
-        <h3>Spaced Repetition in Learning Systems</h3>
-        <p>
-            Study on improving long-term memory and recall speed
-            using adaptive spaced repetition in quiz platforms.
-        </p>
-    </article>
+    <div class="flex flex-wrap gap-3 text-sm">
+        <span class="border border-neutral-800 px-3 py-1 rounded">JavaScript</span>
+        <span class="border border-neutral-800 px-3 py-1 rounded">React</span>
+        <span class="border border-neutral-800 px-3 py-1 rounded">Django</span>
+        <span class="border border-neutral-800 px-3 py-1 rounded">MySQL</span>
+        <span class="border border-neutral-800 px-3 py-1 rounded">Docker</span>
+    </div>
 </section>
 
-<!-- Skills -->
-<section id="skills">
-    <h2>Skills</h2>
-
-    <h3>Programming</h3>
-    <p>Java, Python, JavaScript, TypeScript, C, SQL</p>
-
-    <h3>Frameworks</h3>
-    <p>React, Next.js, Node.js, Express, NestJS, Django, Spring Boot</p>
-
-    <h3>Databases</h3>
-    <p>MySQL, PostgreSQL, MongoDB, SQLite</p>
-
-    <h3>Tools</h3>
-    <p>Git, GitHub, Docker, CI/CD, AWS, Azure</p>
-
-    <h3>Software Engineering</h3>
-    <p>OOP, Data Structures, Algorithms, SDLC, Agile, Testing</p>
-</section>
-
-<!-- Languages -->
-<section>
-    <h2>Languages</h2>
-    <ul>
-        <li>English – Professional working proficiency</li>
-        <li>Chinese – HSK 1, HSK 2 (Self-study)</li>
-        <li>Japanese – JLPT N5, JLPT N4 (Self-study)</li>
+<section class="space-y-4">
+    <h2 class="text-2xl font-medium text-white">Languages</h2>
+    <ul class="text-sm text-neutral-400 space-y-1">
+        <li>English — Professional</li>
+        <li>Chinese — HSK 1, HSK 2 (Self-study)</li>
+        <li>Japanese — JLPT N5, N4 (Self-study)</li>
     </ul>
 </section>
 
-<!-- Certifications -->
-<section>
-    <h2>Certifications</h2>
-    <ul>
-        <li>GitHub Foundations</li>
-        <li>Docker Foundations</li>
-        <li>Microsoft Azure AZ-900 – In Progress (January)</li>
-    </ul>
+<section id="contact" class="space-y-4">
+    <h2 class="text-2xl font-medium text-white">Contact</h2>
+    <p>Email: <a class="underline" href="mailto:dharani.withanachchi@gmail.com">dharani.withanachchi@gmail.com</a></p>
+    <p>LinkedIn: <a class="underline" href="https://linkedin.com/in/dharanisw">linkedin.com/in/dharanisw</a></p>
+    <p>GitHub: <a class="underline" href="https://github.com/dharanisw">github.com/dharanisw</a></p>
 </section>
 
-<!-- Leadership -->
-<section>
-    <h2>Leadership & Volunteering</h2>
-
-    <p>
-        <strong>Web Admin</strong><br>
-        IEEE Robotics and Automation Society – UWU
-    </p>
-
-    <p>
-        <strong>Webmaster</strong><br>
-        MS Club – UWU
-    </p>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:dharani.withanachchi@gmail.com">dharani.withanachchi@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/dharanisw" target="_blank">linkedin.com/in/dharanisw</a></p>
-    <p>GitHub: <a href="https://github.com/dharanisw" target="_blank">github.com/dharanisw</a></p>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>© 2025 W. D. Dharani Samudrika</p>
+<footer class="border-t border-neutral-900 py-8 text-sm text-neutral-500">
+    © 2025 W. D. Dharani Samudrika
 </footer>
 
+</main>
 </body>
 </html>
