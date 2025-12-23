@@ -3,40 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <title>W. D. Dharani Samudrika</title>
 </head>
 
-<body class="bg-neutral-800 text-neutral-300 antialiased">
+<body class="bg-neutral-800 text-neutral-300 antialiased motion-reduce:animate-none">
 
-<nav class="max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
+<nav class="animate__animated animate__fadeInDown max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
     <h1 class="text-white font-semibold text-lg">dharani.dev</h1>
     <ul class="flex gap-6 text-sm">
-        <li><a href="#about" class="hover:text-white">About</a></li>
-        <li><a href="#projects" class="hover:text-white">Projects</a></li>
-        <li><a href="#skills" class="hover:text-white">Skills</a></li>
-        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        <li><a href="#about" class="hover:text-white transition">About</a></li>
+        <li><a href="#projects" class="hover:text-white transition">Projects</a></li>
+        <li><a href="#skills" class="hover:text-white transition">Skills</a></li>
+        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
     </ul>
 </nav>
 
 <main class="max-w-5xl mx-auto px-6 space-y-24">
 
-<section class="space-y-4">
+<section class="space-y-4 animate__animated animate__fadeInUp">
     <h2 class="text-4xl sm:text-5xl font-semibold text-white">
         Hi, I'm Dharani Samudrika
     </h2>
-    <h3 class="text-xl text-neutral-400">Software Engineer Intern</h3>
-    <p class="max-w-2xl text-neutral-400">
+    <h3 class="text-xl text-neutral-400 animate__animated animate__fadeInUp animate__delay-1s">
+        Software Engineer Intern
+    </h3>
+    <p class="max-w-2xl text-neutral-400 animate__animated animate__fadeInUp animate__delay-1s">
         I build web applications and enjoy working across frontend and backend.
         I like converting real problems into clear systems and clean flows.
     </p>
-    <div class="flex gap-6 text-sm">
+    <div class="flex gap-6 text-sm animate__animated animate__fadeInUp animate__delay-2s">
         <a href="#contact" class="text-white underline underline-offset-4">Get in Touch</a>
         <a href="https://github.com/dharanisw" target="_blank" class="hover:text-white">GitHub</a>
     </div>
 </section>
 
-<section id="about" class="space-y-6">
+<section id="about" class="space-y-6 animate__animated animate__fadeInUp">
     <h2 class="text-2xl font-medium text-white">About Me</h2>
     <p>
         Software engineering undergraduate with experience in full stack development.
@@ -47,7 +56,7 @@
         I enjoy working on both product logic and technical design.
     </p>
 
-    <div class="border border-neutral-800 rounded-lg p-6">
+    <div class="border border-neutral-700 rounded-lg p-6 animate__animated animate__fadeInUp animate__delay-1s">
         <h3 class="text-white font-medium">Education</h3>
         <p class="mt-2 text-sm text-neutral-400">
             <strong>B.Sc. (Hons) Industrial Information Technology</strong><br>
@@ -58,50 +67,48 @@
 </section>
 
 <section id="projects" class="space-y-10">
-    <h2 class="text-2xl font-medium text-white">Projects</h2>
+    <h2 class="text-2xl font-medium text-white animate__animated animate__fadeInUp">
+        Projects
+    </h2>
 
-    <article class="border border-neutral-800 rounded-lg p-6 space-y-2">
+    <article class="animate__animated animate__fadeInUp border border-neutral-700 rounded-lg p-6 space-y-2">
         <h3 class="text-white font-medium">Axoten Wave</h3>
         <p>All-in-one study assistant with interactive quizzes and multiplayer contests.</p>
         <p class="text-sm text-neutral-500">Next.js · Flutter · NestJS · PostgreSQL</p>
     </article>
 
-    <article class="border border-neutral-800 rounded-lg p-6 space-y-2">
+    <article class="animate__animated animate__fadeInUp animate__delay-1s border border-neutral-700 rounded-lg p-6 space-y-2">
         <h3 class="text-white font-medium">AXOTEN WAVE MARKER (Solo)</h3>
-        <p>
-            Automated essay marking using semantic similarity and embeddings.
-        </p>
+        <p>Automated essay marking using semantic similarity and embeddings.</p>
         <p class="text-sm text-neutral-500">React · Django · MySQL · Gemini API</p>
     </article>
 
-    <article class="border border-neutral-800 rounded-lg p-6 space-y-2">
+    <article class="animate__animated animate__fadeInUp animate__delay-2s border border-neutral-700 rounded-lg p-6 space-y-2">
         <h3 class="text-white font-medium">Student Attendance System</h3>
-        <p>
-            Attendance tracking and academic report generation system.
-        </p>
+        <p>Attendance tracking and academic report generation system.</p>
         <p class="text-sm text-neutral-500">React · Django · MySQL</p>
     </article>
 
-    <article class="border border-neutral-800 rounded-lg p-6 space-y-2">
+    <article class="animate__animated animate__fadeInUp animate__delay-3s border border-neutral-700 rounded-lg p-6 space-y-2">
         <h3 class="text-white font-medium">EzMenu</h3>
         <p>Digital hotel menu and order management system.</p>
         <p class="text-sm text-neutral-500">React · PHP · MySQL</p>
     </article>
 </section>
 
-<section id="skills" class="space-y-6">
+<section id="skills" class="space-y-6 animate__animated animate__fadeInUp">
     <h2 class="text-2xl font-medium text-white">Skills</h2>
 
     <div class="flex flex-wrap gap-3 text-sm">
-        <span class="border border-neutral-800 px-3 py-1 rounded">JavaScript</span>
-        <span class="border border-neutral-800 px-3 py-1 rounded">React</span>
-        <span class="border border-neutral-800 px-3 py-1 rounded">Django</span>
-        <span class="border border-neutral-800 px-3 py-1 rounded">MySQL</span>
-        <span class="border border-neutral-800 px-3 py-1 rounded">Docker</span>
+        <span class="animate__animated animate__fadeIn border border-neutral-700 px-3 py-1 rounded">JavaScript</span>
+        <span class="animate__animated animate__fadeIn animate__delay-1s border border-neutral-700 px-3 py-1 rounded">React</span>
+        <span class="animate__animated animate__fadeIn animate__delay-2s border border-neutral-700 px-3 py-1 rounded">Django</span>
+        <span class="animate__animated animate__fadeIn animate__delay-3s border border-neutral-700 px-3 py-1 rounded">MySQL</span>
+        <span class="animate__animated animate__fadeIn animate__delay-4s border border-neutral-700 px-3 py-1 rounded">Docker</span>
     </div>
 </section>
 
-<section class="space-y-4">
+<section class="space-y-4 animate__animated animate__fadeInUp">
     <h2 class="text-2xl font-medium text-white">Languages</h2>
     <ul class="text-sm text-neutral-400 space-y-1">
         <li>English — Professional</li>
@@ -110,14 +117,14 @@
     </ul>
 </section>
 
-<section id="contact" class="space-y-4">
+<section id="contact" class="space-y-4 animate__animated animate__fadeInUp">
     <h2 class="text-2xl font-medium text-white">Contact</h2>
     <p>Email: <a class="underline" href="mailto:dharani.withanachchi@gmail.com">dharani.withanachchi@gmail.com</a></p>
     <p>LinkedIn: <a class="underline" href="https://linkedin.com/in/dharanisw">linkedin.com/in/dharanisw</a></p>
     <p>GitHub: <a class="underline" href="https://github.com/dharanisw">github.com/dharanisw</a></p>
 </section>
 
-<footer class="border-t border-neutral-900 py-8 text-sm text-neutral-500">
+<footer class="animate__animated animate__fadeIn border-t border-neutral-700 py-8 text-sm text-neutral-500">
     © 2025 W. D. Dharani Samudrika
 </footer>
 
