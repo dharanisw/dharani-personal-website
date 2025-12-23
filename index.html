@@ -1,389 +1,193 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>W. D. Dharani Samudrika - Personal Website</title>
-    <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-
-        .skill-badge {
-            transition: all 0.2s ease;
-        }
-
-        .skill-badge:hover {
-            transform: scale(1.05);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-    </style>
+    <title>W. D. Dharani Samudrika</title>
 </head>
+<body>
 
-<body class="bg-gray-50 text-gray-800">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <h1 class="text-2xl font-bold gradient-text">Dharani.dev</h1>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="hover:text-purple-600 transition">About</a>
-                    <a href="#projects" class="hover:text-purple-600 transition">Projects</a>
-                    <a href="#skills" class="hover:text-purple-600 transition">Skills</a>
-                    <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<!-- Navigation -->
+<nav>
+    <h1>Dharani.dev</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-blue-50 pt-20">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="fade-in-up">
-                    <h2 class="text-5xl md:text-6xl font-bold mb-4">
-                        Hi, I'm <span class="gradient-text">Dharani</span>
-                    </h2>
-                    <p class="text-2xl text-gray-600 mb-6">Software Engineer Intern</p>
-                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-                        Passionate about transforming ideas into user-centric products. Proficient in full stack development with expertise in JavaScript, PHP, and React.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg hover:shadow-lg transition">
-                            Get In Touch
-                        </a>
-                        <a href="https://github.com/dharanisw" target="_blank" class="px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-lg hover:bg-purple-600 hover:text-white transition">
-                            View GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <div class="w-80 h-80 bg-gradient-to-br from-blue-400 to-blue-400 rounded-full flex items-center justify-center shadow-2xl">
-                        <div class="w-72 h-72 bg-white rounded-full flex items-center justify-center">
-                            <svg class="w-40 h-40 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Hero -->
+<section>
+    <h2>Hi, I'm Dharani</h2>
+    <h3>Software Engineer Intern</h3>
+    <p>
+        I build web applications and enjoy working across frontend and backend.
+        I like converting real problems into clear systems and clean flows.
+    </p>
+    <a href="#contact">Get in Touch</a>
+    <a href="https://github.com/dharanisw" target="_blank">GitHub</a>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">About Me</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 card-hover">
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        Software engineering undergraduate proficient in full stack development with expertise in JavaScript, PHP, and React. Skilled in backend engineering and database management through academic projects and real-world experience.
-                    </p>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        Demonstrated ability to design scalable, reliable platforms that handle complex data and perform under pressure. Committed to collaboration and delivering effective software solutions that improve user experiences.
-                    </p>
-                </div>
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Software engineering undergraduate with experience in full stack development.
+        I mainly work with JavaScript, React, Django, and relational databases.
+    </p>
+    <p>
+        I focus on building systems that are practical, scalable, and easy to maintain.
+        I enjoy working on both product logic and technical design.
+    </p>
 
-                <!-- Education -->
-                <div class="mt-12 grid md:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-purple-600">
-                        <h3 class="text-xl font-bold mb-2">B.Sc. (Hons) Industrial Information Technology</h3>
-                        <p class="text-purple-600 font-semibold">Uva Wellassa University</p>
-                        <p class="text-gray-600">2021 - 2026</p>
-                        <p class="text-lg font-bold mt-2">GPA: 3.64/4.0</p>
-                        <span class="inline-block mt-3 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">Dean's List</span>
-                    </div>
-                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-l-4 border-blue-600">
-                        <h3 class="text-xl font-bold mb-2">G.C.E. Advanced Levels</h3>
-                        <p class="text-blue-600 font-semibold">Ferguson High School</p>
-                        <p class="text-gray-600">2018 - 2020</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <h3>Education</h3>
+    <p>
+        <strong>B.Sc. (Hons) Industrial Information Technology</strong><br>
+        Uva Wellassa University (2021 – 2026)<br>
+        GPA: 3.64 / 4.0<br>
+        Dean’s List
+    </p>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Projects & Research</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <!-- Axoten Wave -->
-                <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-xl mr-4">
-                            AW
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold">Axoten Wave</h3>
-                            <p class="text-gray-600">Mar 2025 - Dec 2025</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-4">All-in-one study assistant with interactive quiz system supporting multiplayer contests and secure gameplay.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="skill-badge px-3 py-1 bg-gray-100 rounded-full text-sm">Next.js</span>
-                        <span class="skill-badge px-3 py-1 bg-gray-100 rounded-full text-sm">Flutter</span>
-                        <span class="skill-badge px-3 py-1 bg-gray-100 rounded-full text-sm">NestJS</span>
-                        <span class="skill-badge px-3 py-1 bg-gray-100 rounded-full text-sm">PostgreSQL</span>
-                    </div>
-                    <ul class="text-gray-700 space-y-2">
-                        <li>✓ Real-time contest logic with anti-cheat features</li>
-                        <li>✓ Personalized learning experiences</li>
-                        <li>✓ Score tracking and analytics</li>
-                    </ul>
-                </div>
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
 
-                <!-- EzMenu -->
-                <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-xl mr-4">
-                            EM
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold">EzMenu</h3>
-                            <p class="text-gray-600">Mar 2024 - Aug 2024</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-4">Digital hotel menu system for guests and staff to replace manual ordering processes.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="skill-badge px-3 py-1 bg-gray-100 rounded-full text-sm">React</span>
-                        <span class="skill-badge px-3 py-1 bg-gray-100 rounded-full text-sm">Chakra UI</span>
-                        <span class="skill-badge px-3 py-1 bg-gray-100 rounded-full text-sm">PHP</span>
-                        <span class="skill-badge px-3 py-1 bg-gray-100 rounded-full text-sm">MySQL</span>
-                    </div>
-                    <ul class="text-gray-700 space-y-2">
-                        <li>✓ Real-time order management</li>
-                        <li>✓ Instant menu updates</li>
-                        <li>✓ Optimized kitchen communication</li>
-                    </ul>
-                </div>
+    <!-- Axoten Wave -->
+    <article>
+        <h3>Axoten Wave</h3>
+        <p>All-in-one study assistant with interactive quizzes and multiplayer contests.</p>
+        <p><strong>Tech:</strong> Next.js, Flutter, NestJS, PostgreSQL</p>
+        <ul>
+            <li>Real-time contests with anti-cheat logic</li>
+            <li>Personalized learning experience</li>
+            <li>Score tracking and analytics</li>
+        </ul>
+    </article>
 
-                <!-- Research 1 -->
-                <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 shadow-lg card-hover border-2 border-purple-200">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🔬</span>
-                        <h3 class="text-2xl font-bold">Video Watermarking Research</h3>
-                    </div>
-                    <p class="text-gray-700 mb-4">Deep Neural Network-Based Video Watermarking for Video Piracy Forensics in Educational Streaming</p>
-                    <p class="text-sm text-gray-600 mb-3">Nov 2025 - Sep 2026</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge px-3 py-1 bg-white rounded-full text-sm">Python</span>
-                        <span class="skill-badge px-3 py-1 bg-white rounded-full text-sm">PyTorch</span>
-                        <span class="skill-badge px-3 py-1 bg-white rounded-full text-sm">FFmpeg</span>
-                        <span class="skill-badge px-3 py-1 bg-white rounded-full text-sm">CUDA</span>
-                    </div>
-                </div>
+    <!-- Axoten Wave Marker -->
+    <article>
+        <h3>AXOTEN WAVE MARKER (Solo Project)</h3>
+        <p>
+            An automated essay marking system that evaluates student answers
+            using semantic similarity.
+        </p>
+        <p>
+            Teachers provide the model answer. The system generates embeddings
+            for the correct answer and compares them with student responses
+            to calculate marks.
+        </p>
+        <p><strong>Tech:</strong> React, Django REST API, MySQL, Gemini API</p>
+    </article>
 
-                <!-- Research 2 -->
-                <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 shadow-lg card-hover border-2 border-purple-200">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🧠</span>
-                        <h3 class="text-2xl font-bold">Spaced Repetition Research</h3>
-                    </div>
-                    <p class="text-gray-700 mb-4">Exploring how spaced repetition improves long-term memory and learning speed in the Axoten Wave quiz app</p>
-                    <p class="text-sm text-gray-600 mb-3">Jun 2025 - Sep 2026</p>
-                    <p class="text-gray-700">Adapting review schedules based on individual recall patterns to optimize user performance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Student Attendance System -->
+    <article>
+        <h3>Student Attendance Tracking & Report Generating System (Group Project)</h3>
+        <p>
+            Web system to track student attendance and generate reports for
+            academic and administrative use.
+        </p>
+        <p><strong>Frontend:</strong> React</p>
+        <p><strong>Backend:</strong> Django (REST API)</p>
+        <p><strong>Database:</strong> MySQL</p>
+    </article>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Technical Skills</h2>
-            
-            <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Programming Languages -->
-                <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 card-hover">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <span class="text-2xl mr-2">💻</span>
-                        Programming Languages
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Java</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Python</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">JavaScript</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">TypeScript</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">C</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">SQL</span>
-                    </div>
-                </div>
+    <!-- EzMenu -->
+    <article>
+        <h3>EzMenu</h3>
+        <p>
+            Digital hotel menu system replacing manual ordering.
+        </p>
+        <p><strong>Tech:</strong> React, PHP, MySQL</p>
+        <ul>
+            <li>Real-time order management</li>
+            <li>Instant menu updates</li>
+            <li>Improved kitchen communication</li>
+        </ul>
+    </article>
+</section>
 
-                <!-- Frameworks -->
-                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 card-hover">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <span class="text-2xl mr-2">⚡</span>
-                        Frameworks & Libraries
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">React</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Node.js</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Express.js</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Next.js</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">NestJS</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">SpringBoot</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Django</span>
-                    </div>
-                </div>
+<!-- Research -->
+<section>
+    <h2>Research Work</h2>
 
-                <!-- DevOps -->
-                <div class="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 card-hover">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <span class="text-2xl mr-2">🚀</span>
-                        Tools & DevOps
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Git</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">GitHub</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Docker</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Kubernetes</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">CI/CD</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">AWS</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Azure</span>
-                    </div>
-                </div>
+    <article>
+        <h3>Video Watermarking for Educational Streaming</h3>
+        <p>
+            Research on deep neural network-based video watermarking
+            for piracy forensics.
+        </p>
+        <p><strong>Tech:</strong> Python, PyTorch, FFmpeg, CUDA</p>
+    </article>
 
-                <!-- Databases -->
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 card-hover">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <span class="text-2xl mr-2">🗄️</span>
-                        Databases
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">MongoDB</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">PostgreSQL</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">MySQL</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">SQLite</span>
-                    </div>
-                </div>
+    <article>
+        <h3>Spaced Repetition in Learning Systems</h3>
+        <p>
+            Study on improving long-term memory and recall speed
+            using adaptive spaced repetition in quiz platforms.
+        </p>
+    </article>
+</section>
 
-                <!-- SE Skills -->
-                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6 card-hover">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <span class="text-2xl mr-2">🛠️</span>
-                        Software Engineering
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">OOP</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Data Structures</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Algorithms</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">SDLC</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Agile</span>
-                        <span class="skill-badge px-3 py-2 bg-white rounded-lg text-sm font-semibold">Testing</span>
-                    </div>
-                </div>
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
 
-                <!-- Certifications -->
-                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6 card-hover">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <span class="text-2xl mr-2">🏆</span>
-                        Certifications
-                    </h3>
-                    <div class="space-y-2">
-                        <div class="bg-white p-3 rounded-lg">
-                            <p class="font-semibold">GitHub Foundations</p>
-                            <p class="text-sm text-gray-600">GitHub</p>
-                        </div>
-                        <div class="bg-white p-3 rounded-lg">
-                            <p class="font-semibold">Docker Foundations</p>
-                            <p class="text-sm text-gray-600">Docker, Inc</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <h3>Programming</h3>
+    <p>Java, Python, JavaScript, TypeScript, C, SQL</p>
 
-    <!-- Volunteering -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Leadership & Volunteering</h2>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
-                    <h3 class="text-xl font-bold mb-2">Web Admin</h3>
-                    <p class="text-purple-600 font-semibold">IEEE Robotics and Automation Society</p>
-                    <p class="text-gray-600">Uva Wellassa University</p>
-                    <p class="text-sm text-gray-500 mt-2">Jan 2025 - Jan 2026</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
-                    <h3 class="text-xl font-bold mb-2">Webmaster</h3>
-                    <p class="text-blue-600 font-semibold">MS Club</p>
-                    <p class="text-gray-600">Uva Wellassa University</p>
-                    <p class="text-sm text-gray-500 mt-2">Jan 2025 - Dec 2025</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <h3>Frameworks</h3>
+    <p>React, Next.js, Node.js, Express, NestJS, Django, Spring Boot</p>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-br from-purple-600 to-blue-600 text-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Get In Touch</h2>
-            <div class="max-w-2xl mx-auto text-center">
-                <p class="text-xl mb-8">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                <div class="grid md:grid-cols-3 gap-6 mb-8">
-                    <a href="mailto:dharani.withanachchi@gmail.com" class="bg-white/10 backdrop-blur-sm p-6 rounded-xl hover:bg-white/20 transition">
-                        <div class="text-3xl mb-2">✉️</div>
-                        <p class="font-semibold">Email</p>
-                        <p class="text-sm">dharani.withanachchi@gmail.com</p>
-                    </a>
-                    <a href="https://linkedin.com/in/dharanisw" target="_blank" class="bg-white/10 backdrop-blur-sm p-6 rounded-xl hover:bg-white/20 transition">
-                        <div class="text-3xl mb-2">💼</div>
-                        <p class="font-semibold">LinkedIn</p>
-                        <p class="text-sm">/dharanisw</p>
-                    </a>
-                </div>
-                <div class="flex justify-center gap-4">
-                    <a href="https://github.com/dharanisw" target="_blank" class="px-8 py-4 bg-white text-purple-600 rounded-lg font-semibold hover:shadow-lg transition">
-                        Visit GitHub
-                    </a>
-                    <a href="https://dharani.dev" target="_blank" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
-                        Visit Website
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <h3>Databases</h3>
+    <p>MySQL, PostgreSQL, MongoDB, SQLite</p>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p class="mb-2">204/2, Nelligaswatta, Udahakanda, Bulutota</p>
-            <p>&copy; 2025 W. D. Dharani Samudrika. All rights reserved.</p>
-        </div>
-    </footer>
+    <h3>Tools</h3>
+    <p>Git, GitHub, Docker, CI/CD, AWS, Azure</p>
+
+    <h3>Software Engineering</h3>
+    <p>OOP, Data Structures, Algorithms, SDLC, Agile, Testing</p>
+</section>
+
+<!-- Certifications -->
+<section>
+    <h2>Certifications</h2>
+    <ul>
+        <li>GitHub Foundations</li>
+        <li>Docker Foundations</li>
+        <li>Microsoft Azure AZ-900 – In Progress (January)</li>
+    </ul>
+</section>
+
+<!-- Leadership -->
+<section>
+    <h2>Leadership & Volunteering</h2>
+
+    <p>
+        <strong>Web Admin</strong><br>
+        IEEE Robotics and Automation Society – UWU
+    </p>
+
+    <p>
+        <strong>Webmaster</strong><br>
+        MS Club – UWU
+    </p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:dharani.withanachchi@gmail.com">dharani.withanachchi@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/dharanisw" target="_blank">linkedin.com/in/dharanisw</a></p>
+    <p>GitHub: <a href="https://github.com/dharanisw" target="_blank">github.com/dharanisw</a></p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 W. D. Dharani Samudrika</p>
+</footer>
+
 </body>
-
 </html>
