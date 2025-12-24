@@ -1,0 +1,15 @@
+# robots.txt for dharani.dev
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dharani.dev/sitemap.xml
+
+# Crawl-delay for nice behavior
+Crawl-delay: 10
+
+# Block unnecessary crawling (if you add these later)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*utm_source=*
