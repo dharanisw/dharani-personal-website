@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>W. D. Dharani Samudrika</title>
+
+    <style>
+        .clamp {
+            max-height: 140px;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body class="bg-neutral-800 text-neutral-300 antialiased motion-reduce:animate-none">
@@ -33,7 +40,7 @@
             <h3 class="text-xl text-neutral-400 animate__animated animate__fadeInUp animate__delay-1s">
                 Software Engineer Intern
             </h3>
-            <p class="max-w-2xl text-neutral-400 animate__animated animate__fadeInUp animate__delay-1s">
+            <p class="text-justify max-w-2xl text-neutral-400 animate__animated animate__fadeInUp animate__delay-1s">
                 I build web applications and enjoy working across frontend and backend.
                 I like converting real problems into clear systems and clean flows.
             </p>
@@ -45,11 +52,11 @@
 
         <section id="about" class="space-y-6 animate__animated animate__fadeInUp">
             <h2 class="text-2xl font-medium text-white">About Me</h2>
-            <p>
+            <p class="text-justify">
                 Software engineering undergraduate with experience in full stack development.
                 I mainly work with JavaScript, React, Django, and relational databases.
             </p>
-            <p>
+            <p class="text-justify">
                 I focus on building systems that are practical, scalable, and easy to maintain.
                 I enjoy working on both product logic and technical design.
             </p>
@@ -63,7 +70,7 @@
                     <a href="https://www.uwu.ac.lk/" target="_blank" class=" hover:text-white">
                         Uva Wellassa University
                     </a> (2021 – 2026)<br>
-                    GPA: 3.64 / 4.0 · Dean’s List
+                    GPA: 3.64 / 4.0
                 </p>
 
                 <p class="mt-4 text-sm text-neutral-400">
@@ -80,115 +87,341 @@
                 Projects
             </h2>
 
-            <article class="animate__animated animate__fadeInUp border border-neutral-700 rounded-lg p-6 space-y-2">
+            <article
+                class=" text-justify animate__animated animate__fadeInUp border border-neutral-700 rounded-lg p-6 space-y-2">
                 <h3 class="text-white font-medium">Axoten Wave</h3>
-                <p>Axo Quiz is a smart learning and assessment platform designed to improve knowledge retention and
-                    learner engagement through data-driven quizzes and proven cognitive science techniques. Traditional
-                    quiz methods often stop at showing right or wrong answers, making it difficult for students to track
-                    progress, identify weak areas, or understand how their memory changes over time. Axo Quiz solves
-                    this by combining real-time assessments, memory analytics, and adaptive review mechanisms into a
-                    single scalable system.</p>
 
-                <p>The platform supports both solo practice and real-time multiplayer quizzes, allowing learners to
-                    study independently or compete with others in live quiz sessions. Multiplayer modes are built with
-                    low-latency communication, robust encryption, and anti-cheat mechanisms to maintain fairness and
-                    security. Premium quiz modes further strengthen content protection through advanced piracy tracing
-                    techniques, making the system suitable for both open learning and paid educational content.</p>
+                <div class="clamp">
+                    <p>Axo Quiz is a smart learning and assessment platform designed to improve knowledge retention and
+                        learner engagement through data-driven quizzes and proven cognitive science techniques.
+                        Traditional
+                        quiz methods often stop at showing right or wrong answers, making it difficult for students to
+                        track
+                        progress, identify weak areas, or understand how their memory changes over time. Axo Quiz solves
+                        this by combining real-time assessments, memory analytics, and adaptive review mechanisms into a
+                        single scalable system.</p>
 
-                <p>A key strength of Axo Quiz is its focus on long-term learning rather than short-term testing. After
-                    each quiz, users receive detailed performance reports that include accuracy trends, weak topic
-                    identification, and memory retention indicators. The system models individual forgetting curves and
-                    uses spaced repetition algorithms to automatically schedule review quizzes at the most effective
-                    time—just before information is likely to be forgotten. Flashcard-style question formats promote
-                    active recall, aligning the platform with established learning science principles.</p>
+                    <p>The platform supports both solo practice and real-time multiplayer quizzes, allowing learners to
+                        study independently or compete with others in live quiz sessions. Multiplayer modes are built
+                        with
+                        low-latency communication, robust encryption, and anti-cheat mechanisms to maintain fairness and
+                        security. Premium quiz modes further strengthen content protection through advanced piracy
+                        tracing
+                        techniques, making the system suitable for both open learning and paid educational content.</p>
 
-                <p>Axo Quiz also creates opportunities for educators and content creators. Teachers and quiz creators
-                    can publish and sell premium question sets, while learners earn in-app rewards such as coins through
-                    quiz participation, achievements, and referrals. This built-in monetization model encourages
-                    high-quality content creation and sustained platform engagement.</p>
+                    <p>A key strength of Axo Quiz is its focus on long-term learning rather than short-term testing.
+                        After
+                        each quiz, users receive detailed performance reports that include accuracy trends, weak topic
+                        identification, and memory retention indicators. The system models individual forgetting curves
+                        and
+                        uses spaced repetition algorithms to automatically schedule review quizzes at the most effective
+                        time—just before information is likely to be forgotten. Flashcard-style question formats promote
+                        active recall, aligning the platform with established learning science principles.</p>
 
-                <p>The application is designed for broad accessibility, supporting multiple languages and seamless use
-                    across both web and mobile platforms. By combining secure real-time interaction, adaptive learning
-                    analytics, and scalable monetization, Axo Quiz delivers a modern assessment experience that benefits
-                    students, educators, and content creators alike.</p>
+                    <p>Axo Quiz also creates opportunities for educators and content creators. Teachers and quiz
+                        creators
+                        can publish and sell premium question sets, while learners earn in-app rewards such as coins
+                        through
+                        quiz participation, achievements, and referrals. This built-in monetization model encourages
+                        high-quality content creation and sustained platform engagement.</p>
+
+                    <p>The application is designed for broad accessibility, supporting multiple languages and seamless
+                        use
+                        across both web and mobile platforms. By combining secure real-time interaction, adaptive
+                        learning
+                        analytics, and scalable monetization, Axo Quiz delivers a modern assessment experience that
+                        benefits
+                        students, educators, and content creators alike.</p>
+                </div>
+
+                <button class="toggle-btn text-sm text-white underline underline-offset-4">
+                    Read more
+                </button>
+
                 <p class="text-sm text-neutral-500">Next.js · Flutter · NestJS · PostgreSQL</p>
             </article>
 
             <article
                 class="animate__animated animate__fadeInUp animate__delay-1s border border-neutral-700 rounded-lg p-6 space-y-2">
                 <h3 class="text-white font-medium">Axoten Wave Marker</h3>
-                <p>This project focuses on designing and developing an intelligent essay-marking system that evaluates
-                    students’ written answers while respecting creativity and semantic meaning, rather than relying on
-                    exact keyword matching.</p>
 
-                <p>Teachers create essay questions and provide a reference answer. The system generates semantic
-                    embeddings from the teacher’s answer using the <strong>Gemini API </strong>and stores them as a
-                    benchmark. When
-                    students submit their essay responses, the system generates embeddings for student answers and
-                    compares them against the reference embeddings using similarity scoring techniques. Marks are
-                    calculated by combining semantic similarity with creativity weighting to reduce unfair penalization
-                    of original yet correct answers.</p>
+                <div class="clamp">
+                    <p class="text-justify">This project focuses on designing and developing an intelligent
+                        essay-marking system that evaluates
+                        students’ written answers while respecting creativity and semantic meaning, rather than relying
+                        on
+                        exact keyword matching.</p>
 
-                <p>The application supports role-based access for teachers and students, secure submission handling,
-                    automated evaluation, feedback generation, and result visibility. Special attention is given to
-                    error handling, bias reduction, fallback mechanisms, and audit logging to ensure reliable and
-                    transparent evaluation.</p>
+                    <p class="text-justify">Teachers create essay questions and provide a reference answer. The system
+                        generates semantic
+                        embeddings from the teacher’s answer using the <strong>Gemini API </strong>and stores them as a
+                        benchmark. When
+                        students submit their essay responses, the system generates embeddings for student answers and
+                        compares them against the reference embeddings using similarity scoring techniques. Marks are
+                        calculated by combining semantic similarity with creativity weighting to reduce unfair
+                        penalization
+                        of original yet correct answers.</p>
+
+                    <p class="text-justify">The application supports role-based access for teachers and students, secure
+                        submission handling,
+                        automated evaluation, feedback generation, and result visibility. Special attention is given to
+                        error handling, bias reduction, fallback mechanisms, and audit logging to ensure reliable and
+                        transparent evaluation.</p>
+                </div>
+
+                <button class="toggle-btn text-sm text-white underline underline-offset-4">
+                    Read more
+                </button>
+
                 <p class="text-sm text-neutral-500">React · Django · MySQL · Gemini API</p>
             </article>
 
             <article
                 class="animate__animated animate__fadeInUp animate__delay-2s border border-neutral-700 rounded-lg p-6 space-y-2">
                 <h3 class="text-white font-medium">Student Attendance System</h3>
-                <p>A full-stack web application designed to digitally manage student attendance and generate accurate
-                    attendance reports for educational institutions. The system supports role-based access for
-                    administrators, lecturers, and students, allowing each user to interact with features relevant to
-                    their role.</p>
 
-                <p>The application enables administrators to manage students, courses, subjects, and class schedules.
-                    Lecturers can create class sessions, mark attendance, and view detailed attendance summaries.
-                    Students can securely view their personal attendance records and download reports. Attendance data
-                    is stored in a relational database and processed to calculate percentages and generate reports over
-                    selected time periods.</p>
+                <div class="clamp">
+                    <p class="text-justify">A full-stack web application designed to digitally manage student attendance
+                        and generate accurate
+                        attendance reports for educational institutions. The system supports role-based access for
+                        administrators, lecturers, and students, allowing each user to interact with features relevant
+                        to
+                        their role.</p>
 
-                <p>The frontend is built using React to provide a responsive and interactive user interface, while the
-                    backend is implemented with Django and Django REST Framework to handle business logic and API
-                    communication. MySQL is used for structured data storage, ensuring data consistency and efficient
-                    querying. The project follows a clear separation between frontend, backend, and database layers,
-                    making it scalable and maintainable.</p>
+                    <p class="text-justify">The application enables administrators to manage students, courses,
+                        subjects, and class schedules.
+                        Lecturers can create class sessions, mark attendance, and view detailed attendance summaries.
+                        Students can securely view their personal attendance records and download reports. Attendance
+                        data
+                        is stored in a relational database and processed to calculate percentages and generate reports
+                        over
+                        selected time periods.</p>
+
+                    <p class="text-justify">The frontend is built using React to provide a responsive and interactive
+                        user interface, while the
+                        backend is implemented with Django and Django REST Framework to handle business logic and API
+                        communication. MySQL is used for structured data storage, ensuring data consistency and
+                        efficient
+                        querying. The project follows a clear separation between frontend, backend, and database layers,
+                        making it scalable and maintainable.</p>
+                </div>
+
+                <button class="toggle-btn text-sm text-white underline underline-offset-4">
+                    Read more
+                </button>
+
                 <p class="text-sm text-neutral-500">React · Django · MySQL</p>
             </article>
 
             <article
                 class="animate__animated animate__fadeInUp animate__delay-3s border border-neutral-700 rounded-lg p-6 space-y-2">
                 <h3 class="text-white font-medium">EzMenu - Digital Hotel Menu System</h3>
-                <p>EzMenu is a digital hotel menu and food ordering system created to modernize how hotels manage dining
-                    services
-                    and interact with guests. Many hotels still rely on printed menus and manual order handling, which
-                    often causes
-                    delays, order mistakes, and difficulty updating menus. EzMenu addresses these issues by replacing
-                    traditional
-                    workflows with a centralized digital platform that improves accuracy, efficiency, and guest
-                    satisfaction.</p>
 
-                <p>The system allows hotel guests to view menus digitally, customize food items, and place orders with
-                    clarity
-                    and ease. Real-time menu updates prevent guests from ordering unavailable items, reducing confusion
-                    and frustration.
-                    Guests can also leave reviews and search for hotels through the platform, helping hotels build trust
-                    and visibility
-                    while improving service quality.</p>
-                <p>EzMenu follows a scalable subscription model. Hotels can start with a free plan that supports basic
-                    menu customization and order management for up to 10 tables. Paid plans unlock advanced features
-                    such as unlimited tables, enhanced order handling, analytics, system integrations, priority support,
-                    and continuous feature updates. This makes the platform suitable for both small hotels and growing
-                    hospitality businesses.</p>
-                <p>Overall, EzMenu focuses on improving the dining experience for guests while helping hotels operate
-                    more efficiently, reduce errors, and grow their business through a reliable and user-friendly
-                    digital solution.</p>
+                <div class="clamp">
+                    <p class="text-justify">EzMenu is a digital hotel menu and food ordering system created to modernize
+                        how hotels manage dining
+                        services
+                        and interact with guests. Many hotels still rely on printed menus and manual order handling,
+                        which
+                        often causes
+                        delays, order mistakes, and difficulty updating menus. EzMenu addresses these issues by
+                        replacing
+                        traditional
+                        workflows with a centralized digital platform that improves accuracy, efficiency, and guest
+                        satisfaction.</p>
+
+                    <p class="text-justify">The system allows hotel guests to view menus digitally, customize food
+                        items, and place orders with
+                        clarity
+                        and ease. Real-time menu updates prevent guests from ordering unavailable items, reducing
+                        confusion
+                        and frustration.
+                        Guests can also leave reviews and search for hotels through the platform, helping hotels build
+                        trust
+                        and visibility
+                        while improving service quality.</p>
+
+                    <p class="text-justify">EzMenu follows a scalable subscription model. Hotels can start with a free
+                        plan that supports basic
+                        menu customization and order management for up to 10 tables. Paid plans unlock advanced features
+                        such as unlimited tables, enhanced order handling, analytics, system integrations, priority
+                        support,
+                        and continuous feature updates. This makes the platform suitable for both small hotels and
+                        growing
+                        hospitality businesses.</p>
+
+                    <p class="text-justify">Overall, EzMenu focuses on improving the dining experience for guests while
+                        helping hotels operate
+                        more efficiently, reduce errors, and grow their business through a reliable and user-friendly
+                        digital solution.</p>
+                </div>
+
+                <button class="toggle-btn text-sm text-white underline underline-offset-4">
+                    Read more
+                </button>
 
                 <p class="text-sm text-neutral-500">React · PHP · MySQL</p>
+
+            </article>
+            <article>
+                <article
+                    class="animate__animated animate__fadeInUp animate__delay-4s border border-neutral-700 rounded-lg p-6 space-y-2">
+                    <h3 class="text-white font-medium">UWU Expo 2025 – AR Navigation & Marker-Based Experience</h3>
+
+                    <div class="clamp">
+                        <p class="text-justify">
+                            Using <strong>Location-Based AR</strong> powered by the <strong>Niantic SDK</strong>, we
+                            scanned the university premises through <strong>Scaniverse</strong>, uploaded them as meshes
+                            for <strong>VPS</strong>, and integrated them into <strong>Unity</strong> using the
+                            geospatial browser. This setup enabled accurate placement and rendering of virtual models at
+                            real-world spots using GPS and VPS tracking.
+                        </p>
+                        <p class="text-justify">
+                            Though multiple locations couldn’t be loaded simultaneously, the system brought up the
+                            correct content as users arrived at each site. About 80% of the campus was captured as a 3D
+                            mesh for future AR-based projects.
+                        </p>
+                        <p class="text-justify">
+                            We also created a <strong>Marker-Based AR</strong> experience using <strong>ar.js</strong>,
+                            hosted on a web app. Visitors scanned markers near exhibition halls to view maps, nearby
+                            stalls, and hidden easter eggs. To enhance interactivity, a handheld box with markers
+                            allowed users to explore the navigation system up close.
+                        </p>
+                    </div>
+
+                    <button class="toggle-btn text-sm text-white underline underline-offset-4">Read more</button>
+
+                    <p class="text-sm text-neutral-500">Unity · Niantic SDK · Scaniverse · ar.js · Geospatial AR</p>
+                </article>
+
             </article>
         </section>
+
+        <section id="research" class="space-y-10">
+            <h2 class="text-2xl font-medium text-white animate__animated animate__fadeInUp">
+                Research
+            </h2>
+
+            <article class="animate__animated animate__fadeInUp border border-neutral-700 rounded-lg p-6 space-y-2">
+                <h3 class="text-white font-medium">Video Watermarking Research</h3>
+                <p class="text-justify text-neutral-400">
+                    This research focuses on developing a hybrid forensic watermarking system for educational video
+                    streaming. It integrates per-viewer session fingerprinting (A/B watermarking) with robust deep
+                    neural network (DNN)-based watermarking to prevent piracy and trace unauthorized use. The system
+                    balances imperceptibility, robustness, and computational efficiency, allowing educational platforms
+                    to track piracy without affecting stream quality or performance. Key components include DNN-based
+                    watermark embedding, session-specific viewer tagging, watermark extraction, and attack simulations
+                    for robustness evaluation.
+                </p>
+                <p class="text-sm text-neutral-500 mb-2">Nov 2025 - Sep 2026</p>
+                <p class="text-sm text-neutral-400">
+                    Technologies: Python · PyTorch · FFmpeg · CUDA
+                </p>
+            </article>
+
+            <article class="animate__animated animate__fadeInUp border border-neutral-700 rounded-lg p-6 space-y-2">
+                <h3 class="text-white font-medium">Spaced Repetition Research</h3>
+                <p class="text-justify text-neutral-400">
+                    Exploring how spaced repetition improves long-term memory and learning speed in the Axoten Wave quiz
+                    app.
+                </p>
+                <p class="text-sm text-neutral-500 mb-2">Jun 2025 - Sep 2026</p>
+                <p class="text-sm text-neutral-400">
+                    Adapting review schedules based on individual recall patterns to optimize user performance.
+                </p>
+            </article>
+        </section>
+
+        <section id="certifications" class="space-y-6">
+            <h2 class="text-2xl font-medium text-white animate__animated animate__fadeInUp">
+                Certifications
+            </h2>
+            <div class="space-y-2">
+                <div class="border border-neutral-700 rounded-lg p-4 text-neutral-400">
+                    <p class="font-semibold">AZ-900: Microsoft Azure Fundamentals (Exam Scheduled Jan 2026)</p>
+                    <p class="text-sm text-neutral-500">Microsoft</p>
+                </div>
+
+                <div class="border border-neutral-700 rounded-lg p-4 text-neutral-400">
+                    <p class="font-semibold">GitHub Foundations</p>
+                    <p class="text-sm text-neutral-500">GitHub</p>
+                </div>
+                <div class="border border-neutral-700 rounded-lg p-4 text-neutral-400">
+                    <p class="font-semibold">Docker Foundations</p>
+                    <p class="text-sm text-neutral-500">Docker, Inc</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteering" class="space-y-10">
+            <h2 class="text-2xl font-medium text-white animate__animated animate__fadeInUp">
+                Leadership & Volunteering
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div
+                    class="border border-neutral-700 rounded-lg p-6 text-neutral-400 animate__animated animate__fadeInUp">
+                    <h3 class="text-white font-medium mb-1">Web Admin</h3>
+                    <p class="text-purple-400 font-semibold">IEEE Robotics and Automation Society</p>
+                    <p class="text-neutral-400">Uva Wellassa University</p>
+                    <p class="text-sm text-neutral-500 mt-2">Jan 2025 - Jan 2026</p>
+                </div>
+
+                <div
+                    class="border border-neutral-700 rounded-lg p-6 text-neutral-400 animate__animated animate__fadeInUp">
+                    <h3 class="text-white font-medium mb-1">Webmaster</h3>
+                    <p class="text-purple-400 font-semibold">MS Club</p>
+                    <p class="text-neutral-400">Uva Wellassa University</p>
+                    <p class="text-sm text-neutral-500 mt-2">Jan 2025 - Dec 2025</p>
+                </div>
+
+                <div
+                    class="border border-neutral-700 rounded-lg p-6 text-neutral-400 animate__animated animate__fadeInUp">
+                    <h3 class="text-white font-medium mb-1">Content Management Volunteer</h3>
+                    <p class="text-blue-400 font-semibold">Rotaract Club of Uva Wellassa University - Badulla</p>
+                    <p class="text-neutral-400">Uva Wellassa University</p>
+                    <p class="text-sm text-neutral-500 mt-2">Jan 2024 - Dec 2024</p>
+                </div>
+
+                <div
+                    class="border border-neutral-700 rounded-lg p-6 text-neutral-400 animate__animated animate__fadeInUp">
+                    <h3 class="text-white font-medium mb-1">Technical Team Member</h3>
+                    <p class="text-blue-400 font-semibold">FOSS Community</p>
+                    <p class="text-neutral-400">Uva Wellassa University</p>
+                    <p class="text-sm text-neutral-500 mt-2">Jan 2024 - Dec 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="space-y-10">
+            <h2 class="text-2xl font-medium text-white animate__animated animate__fadeInUp">
+                Achievements & Awards
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div
+                    class="border border-neutral-700 rounded-lg p-6 text-neutral-400 animate__animated animate__fadeInUp">
+                    <h3 class="text-white font-medium mb-1">Dean’s List Recognition</h3>
+                    <p class="text-yellow-400 font-semibold">Semesters 1.2 & 2.1</p>
+                    <p class="text-sm text-neutral-500 mt-2">
+                        Selected for the Dean’s List for both 1.2 and 2.1 semesters due to consistent academic
+                        performance, hard work, and dedication.
+                    </p>
+                </div>
+                <div
+                    class="border border-neutral-700 rounded-lg p-6 text-neutral-400 animate__animated animate__fadeInUp">
+                    <h3 class="text-white font-medium mb-1">1st Place – UvaXtreme 1.1</h3>
+                    <p class="text-yellow-400 font-semibold">3rd-year Category</p>
+                    <p class="text-neutral-400">Team: <strong>Code Crafters</strong></p>
+                    <p class="text-sm text-neutral-500 mt-2">
+                        Secured 1st place in the 3rd-year category at UvaXtreme 1.1. The event celebrated creativity,
+                        collaboration, and problem-solving.
+                    </p>
+                </div>
+            </div>
+        </section>
+
 
         <section id="skills" class="space-y-6">
             <h2 class="text-2xl font-medium text-white">Technical Skills</h2>
@@ -242,7 +475,6 @@
             </div>
         </section>
 
-
         <section class="space-y-4 animate__animated animate__fadeInUp">
             <h2 class="text-2xl font-medium text-white">Languages</h2>
             <ul class="text-sm text-neutral-400 space-y-1">
@@ -265,8 +497,23 @@
             © 2025 W. D. Dharani Samudrika
         </footer>
 
-
     </main>
+
+    <script>
+        document.querySelectorAll(".toggle-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const content = btn.previousElementSibling;
+
+                content.classList.toggle("clamp");
+
+                btn.textContent =
+                    content.classList.contains("clamp")
+                        ? "Read more"
+                        : "Read less";
+            });
+        });
+    </script>
+
 </body>
 
 </html>
